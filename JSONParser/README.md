@@ -317,6 +317,7 @@ regex pattern 에 매치되는지 확인할 때 사용
 
   - input : pattern 검사될 string, 검사될 string의 range(`NSRange`)
   - output : 매치된 문자열들 -  `[NSTextCheckingResult]`
+  - output 배열의 element 가 1개 이다 == 검사 대상 string 전부가 패턴에 일치한다
 
 - `NSTextCheckingResult`
 
@@ -329,6 +330,8 @@ regex pattern 에 매치되는지 확인할 때 사용
   - `NSRange` → `Range` 로 변경해서 input의 substring 을 구하면 됨
 
     - `String(input[range])`
+  
+  
 
 &nbsp;
 
